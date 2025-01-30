@@ -26,9 +26,16 @@ This project is a real-time location tracking system built using Apache Kafka fo
 ---
 
 ## 3️⃣ Running the Project with Docker
+
+You can download zip file via GitHub , after unzip that and open on Intelij Idea, after run your Docker Desktop and after that go to Intelij Idea and on terminal write 
+```sh
+$ mvn clean package
+```sh
+$ docker-compose up --build
+
 ### Step 1: Clone the Repository
 ```sh
-$ git clone https://github.com/YOUR_GITHUB_USERNAME/location-tracking.git
+$ git clone https://github.com/narekmehrabyan675/polixistaskfinish2
 $ cd location-tracking
 ```
 
