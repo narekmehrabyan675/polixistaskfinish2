@@ -5,6 +5,7 @@ import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.ProducerRecord;
+import producer.LocationProducer;
 import util.Haversine;
 
 import java.util.logging.Logger;
