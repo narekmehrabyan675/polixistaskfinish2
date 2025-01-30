@@ -85,4 +85,14 @@ public class LocationConsumerTest {
         // Verify that Kafka producer was called with correctly formatted message
         verify(mockProducer, times(1)).send(any(ProducerRecord.class));
     }
+
+    @Test
+    void testSendLocation() {
+        KafkaProducer<String, String> mockProducer = mock(KafkaProducer.class);
+        LocationProducer producer = new LocationProducer(mockProducer);
+
+        producer.sendLocation(40.1792, 44.4991);
+
+        verify(mockProducer, times(1)).send(any(ProducerRecord.class));
+    }
 }
