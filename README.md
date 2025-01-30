@@ -30,8 +30,12 @@ This project is a real-time location tracking system built using Apache Kafka fo
 You can download zip file via GitHub , after unzip that and open on Intelij Idea, after run your Docker Desktop and after that go to Intelij Idea and on terminal write 
 ```sh
 $ mvn clean package
+```
 ```sh
 $ docker-compose up --build
+```
+
+You can via clone Repository too.
 
 ### Step 1: Clone the Repository
 ```sh
