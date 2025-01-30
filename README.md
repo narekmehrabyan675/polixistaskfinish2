@@ -32,6 +32,9 @@ You can download zip file via GitHub , after unzip that and open on Intelij Idea
 $ mvn clean package
 ```
 ```sh
+$ docker-compose down
+```
+```sh
 $ docker-compose up --build
 ```
 
