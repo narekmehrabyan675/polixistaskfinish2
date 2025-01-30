@@ -48,6 +48,9 @@ $ cd location-tracking
 
 ### Step 2: Build and Run the Docker Containers
 ```sh
+$ mvn clean package
+```
+```sh
 $ docker-compose up --build
 ```
 This will:
