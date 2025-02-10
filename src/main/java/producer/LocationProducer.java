@@ -16,12 +16,11 @@ public class LocationProducer {
     private final KafkaProducer<String, String> producer;
 
 
-    // Конструктор
     public LocationProducer(KafkaProducer<String, String> producer) {
         this.producer = producer;
     }
 
-    // Метод для отправки локации
+    //method to send location
     public void sendLocation(double latitude, double longitude) {
         String locationJson = String.format("{\"latitude\": %f, \"longitude\": %f}", latitude, longitude);
         producer.send(new ProducerRecord<>(TOPIC, locationJson));
